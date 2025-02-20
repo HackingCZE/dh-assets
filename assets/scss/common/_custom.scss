@@ -1,0 +1,25 @@
+/* Zajistí, že navigace zůstane viditelná na všech velikostech obrazovky */
+@media (max-width: 768px) {
+    .navbar-collapse {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: flex-end !important;
+      opacity: 1 !important;
+      height: auto !important;
+      visibility: visible !important;
+      position: relative !important;
+      transform: none !important;
+    }
+  
+    /* Zabrání zmizení jednotlivých ikon */
+    .navbar-collapse a, 
+    .navbar-collapse button {
+      display: inline-block !important;
+    }
+  
+    /* Skryje hamburger menu */
+    .navbar-toggler {
+      display: none !important;
+    }
+  }
+  

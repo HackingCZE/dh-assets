@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on DH Assets</title>
+    <link>http://localhost:1313/docs/dh-save-system/overview/</link>
+    <description>Recent content in Overview on DH Assets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/docs/dh-save-system/overview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Licenses</title>
+      <link>http://localhost:1313/docs/dh-save-system/overview/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/overview/licenses/</guid>
+      <description>&lt;p&gt;This project includes the following software components, each under its own license:&lt;/p&gt;&#xA;&lt;h3 id=&#34;dh-save-system&#34;&gt;&lt;strong&gt;DH Save System&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Limited Use License Agreement&lt;/p&gt;&#xA;&lt;p&gt;Copyright (c) 2024 Dominik Hurta&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

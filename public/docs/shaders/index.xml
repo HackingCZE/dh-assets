@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DH Shaders on DH Assets</title>
+    <link>http://localhost:1313/docs/shaders/</link>
+    <description>Recent content in DH Shaders on DH Assets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/docs/shaders/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Licenses</title>
+      <link>http://localhost:1313/docs/shaders/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/licenses/</guid>
+      <description>&lt;p&gt;This project includes the following software components, each under its own license:&lt;/p&gt;&#xA;&lt;h3 id=&#34;dh-shaders&#34;&gt;&lt;strong&gt;DH Shaders&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Limited Use License Agreement&lt;/p&gt;&#xA;&lt;p&gt;Copyright (c) 2024 Dominik Hurta&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Liquid Potion</title>
+      <link>http://localhost:1313/docs/shaders/liquid-potion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/liquid-potion/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the &lt;strong&gt;Liquid Potion&lt;/strong&gt; &lt;strong&gt;Shader&lt;/strong&gt; documentation. This shader for Unity provides customizable liquid, glass, and bottle shaders, enabling you to create realistic potion effects with adjustable liquid levels, colors, and glass properties. This documentation will guide you through the initial setup and configuration to help you get the most out of the Liquid Potion Shader.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Stencil - URP</title>
+      <link>http://localhost:1313/docs/shaders/stencil-urp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/stencil-urp/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the &lt;strong&gt;Stencil Shader&lt;/strong&gt; documentation. This guide will help you understand how to integrate and utilize the Stencil Shader within Unity&amp;rsquo;s Universal Render Pipeline (URP) to create stunning visual effects such as impossible geometry and portal effects.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UI Blur - URP</title>
+      <link>http://localhost:1313/docs/shaders/ui-blur-urp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/ui-blur-urp/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the &lt;strong&gt;UI BLUR - URP Shader&lt;/strong&gt; documentation. This guide will help you understand how to integrate and utilize the UI Blur shader within Unity&amp;rsquo;s Universal Render Pipeline (URP) to create stunning blur effects on UI elements and 3D objects.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

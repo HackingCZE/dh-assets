@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.73d646f9b2aee87b676d7172f73ab783e32a938901e7ef363d921a1b22e11c8a31f0410bdf192f4feb03a78a0d1003943d500aa81ff453910c2530e856179859.css" integrity="sha512-c9ZG&#43;bKu6HtnbXFy9zq3g&#43;Mqk4kB5&#43;82PZIaGyLhHIox8EEL3xkvT&#43;sDp4oNEAOUPVAKqB/0U5EMJTDoVheYWQ==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/shaders-copy/ui-blur-urp/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/shaders-copy/ui-blur-urp/">
+
+
+<title>UI Blur - URP  |  DH Assets</title>
+<meta name="description" content="">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/shaders-copy/ui-blur-urp/">
+  <meta property="og:site_name" content="DH Assets">
+  <meta property="og:title" content="UI Blur - URP">
+  <meta property="og:description" content="Introduction Welcome to the UI BLUR - URP Shader documentation. This guide will help you understand how to integrate and utilize the UI Blur shader within Unity’s Universal Render Pipeline (URP) to create stunning blur effects on UI elements and 3D objects.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="og:image" content="http://localhost:1313/cover.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/cover.png">
+  <meta name="twitter:title" content="UI Blur - URP">
+  <meta name="twitter:description" content="Introduction Welcome to the UI BLUR - URP Shader documentation. This guide will help you understand how to integrate and utilize the UI Blur shader within Unity’s Universal Render Pipeline (URP) to create stunning blur effects on UI elements and 3D objects.">
+      <meta name="twitter:site" content="@getdoks">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Dh Unity Assets Documentation",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Docs",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/shaders-copy/",
+       "name": "Shaders Documentation",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Ui Blur Urp",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <header class="navbar navbar-expand-lg">
+  <div class="container">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">DH Assets</a>
+
+    
+    
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+      <a href="/docs/dh-save-system/">DH Save System</a>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Shaders Documentation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/shaders-copy/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders-copy/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders-copy/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/shaders-copy/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Shaders Documentation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/shaders/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">DH Assets</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"></ul>
+
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link p-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://assetstore.unity.com/publishers/94813"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-unity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l6 4v7" /> <path d="M18 17l-6 4l-6 -4" /> <path d="M4 14v-7l6 -4" /> <path d="M4 7l8 5v9" /> <path d="M20 7l-8 5" /></svg><small class="ms-2 visually-hidden">Unity Assets Store</small></a>
+            </li>
+          </ul>
+        
+        </div>
+    </div>
+
+    
+    </div>
+</header>
+
+<div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 visually-hidden" id="searchModalLabel">Search</h1>
+        <button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="search-input flex-grow-1 d-none">
+          <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+            <label for="query" class="visually-hidden">Search</label>
+            <div class="d-flex">
+              <input type="search" id="query" name="query" class="search-text form-control form-control-lg" placeholder="Search" aria-label="Search" maxlength="128" autocomplete="off">
+              <button type="button" class="btn btn-link text-decoration-none px-0 ms-3 d-md-none" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="search-loading status message d-none mt-3 text-center">Loading search index…</p>
+        <p class="search-no-recent message d-none mt-3 text-center">No recent searches</p>
+        <p class="search-no-results message d-none mt-3 text-center">No results for "<strong><span class="query-no-results">Query here</span></strong>"</p>
+        <div id="searchResults" class="search-results"></div>
+        <template>
+          <article class="search-result list-view">
+            <div class="card my-3">
+              <div class="card-body">
+                <header>
+                  <h2 class="h5 title title-submitted mb-0"><a class="stretched-link text-decoration-none text-reset" href="#">Title here</a></h2>
+                  <div class="submitted d-none"><time class="created-date">Date here</time></div>
+                </header>
+                <div class="content">Summary here</div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline me-auto d-none d-md-block">
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd><span class="DocSearch-Label">to select</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd><span class="DocSearch-Label">to navigate</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd><span class="DocSearch-Label">to close</span></li>
+        </ul>
+        <p class="d-md-none">Search by <a class="text-decoration-none" href="https://github.com/nextapps-de/flexsearch">FlexSearch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar docs-sidebar-top d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+      <a href="/docs/dh-save-system/">DH Save System</a>
+  </li>
+
+  <li>
+    <details open open>
+      <summary>Shaders Documentation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/shaders-copy/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders-copy/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders-copy/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/shaders-copy/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Shaders Documentation</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/shaders/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li>
+      <a href="/docs/shaders/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc docs-toc-top d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#overview"><strong>Overview</strong></a></li>
+    <li><a href="#setting-up-the-shader-for-ui_blur_mat"><strong>Setting Up the Shader (For</strong> <code>ui_blur_mat</code><strong>)</strong></a>
+      <ul>
+        <li><a href="#enabling-opaque-texture">Enabling Opaque Texture</a></li>
+        <li><a href="#configuring-opaque-downsampling">Configuring Opaque Downsampling</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-ui-blur-materials"><strong>Working with UI Blur Materials</strong></a>
+      <ul>
+        <li><a href="#ui_blur_mat">ui_blur_mat</a></li>
+        <li><a href="#ui_blur_mat_transparent">ui_blur_mat_transparent</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-the-ui-blur-controller-script"><strong>Using the UI Blur Controller Script</strong></a></li>
+    <li><a href="#shapes-and-customization"><strong>Shapes and Customization</strong></a></li>
+    <li><a href="#span-classmark-data-color3new-featurespan-drag-and-drop-ui-element-blurring"><strong><span class="mark" data-color="3">New Feature:</span> Drag-and-Drop UI Element Blurring</strong></a></li>
+    <li><a href="#faq"><strong>FAQ</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+			<h1>UI Blur - URP</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#overview"><strong>Overview</strong></a></li>
+    <li><a href="#setting-up-the-shader-for-ui_blur_mat"><strong>Setting Up the Shader (For</strong> <code>ui_blur_mat</code><strong>)</strong></a>
+      <ul>
+        <li><a href="#enabling-opaque-texture">Enabling Opaque Texture</a></li>
+        <li><a href="#configuring-opaque-downsampling">Configuring Opaque Downsampling</a></li>
+      </ul>
+    </li>
+    <li><a href="#working-with-ui-blur-materials"><strong>Working with UI Blur Materials</strong></a>
+      <ul>
+        <li><a href="#ui_blur_mat">ui_blur_mat</a></li>
+        <li><a href="#ui_blur_mat_transparent">ui_blur_mat_transparent</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-the-ui-blur-controller-script"><strong>Using the UI Blur Controller Script</strong></a></li>
+    <li><a href="#shapes-and-customization"><strong>Shapes and Customization</strong></a></li>
+    <li><a href="#span-classmark-data-color3new-featurespan-drag-and-drop-ui-element-blurring"><strong><span class="mark" data-color="3">New Feature:</span> Drag-and-Drop UI Element Blurring</strong></a></li>
+    <li><a href="#faq"><strong>FAQ</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<h2 id="introduction"><strong>Introduction</strong><a href="#introduction" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Welcome to the <strong>UI BLUR - URP Shader</strong> documentation. This guide will help you understand how to integrate and utilize the UI Blur shader within Unity&rsquo;s Universal Render Pipeline (URP) to create stunning blur effects on UI elements and 3D objects.</p>
+<h2 id="overview"><strong>Overview</strong><a href="#overview" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The UI BLUR - URP shader is designed to provide blur effects for both UI elements and 3D/2D objects within your Unity project. It includes:</p>
+<ul>
+<li>
+<p><code>ui_blur_mat</code>: A material for blurring UI elements and 3D/2D objects.</p>
+</li>
+<li>
+<p><code>ui_blur_mat_transparent</code>: A material specifically for blurring 3D/2D objects.</p>
+</li>
+<li>
+<p><code>UI Blur Controller</code> script: A utility to control the blur amount dynamically.</p>
+</li>
+</ul>
+<h2 id="setting-up-the-shader-for-ui_blur_mat"><strong>Setting Up the Shader (For</strong> <code>ui_blur_mat</code><strong>)</strong><a href="#setting-up-the-shader-for-ui_blur_mat" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="enabling-opaque-texture">Enabling Opaque Texture<a href="#enabling-opaque-texture" class="anchor" aria-hidden="true">#</a> </h3>
+<p>For the <code>ui_blur_mat</code> material to work correctly, you need to enable the <strong>Opaque Texture</strong> property in the Render Pipeline Asset.</p>
+<ol>
+<li>
+<p>Open your URP settings.</p>
+</li>
+<li>
+<p>Set <strong>Opaque Texture</strong> to TRUE.</p>
+</li>
+</ol>
+<h3 id="configuring-opaque-downsampling">Configuring Opaque Downsampling<a href="#configuring-opaque-downsampling" class="anchor" aria-hidden="true">#</a> </h3>
+<p>It is recommended to configure <strong>Opaque Downsampling</strong> to <code>4x Box</code> for optimal performance.</p>
+<ol>
+<li>
+<p>In URP settings, find the <strong>Opaque Downsampling</strong> option.</p>
+</li>
+<li>
+<p>Set it to <code>4x Box</code>.</p>
+</li>
+</ol>
+<p><img
+    src="images/shaders/image1.png" alt=""
+    
+    
+    /></p>
+<h2 id="working-with-ui-blur-materials"><strong>Working with UI Blur Materials</strong><a href="#working-with-ui-blur-materials" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="ui_blur_mat">ui_blur_mat<a href="#ui_blur_mat" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This material works for both UI elements and gameobjects in the scene.</p>
+<ol>
+<li>
+<p>Ensure the <strong>Opaque Texture</strong> property is enabled.</p>
+</li>
+<li>
+<p>Apply the <code>ui_blur_mat</code> to your UI element or gameobject.</p>
+</li>
+</ol>
+<p>Make sure you turn off the <code>Is Transparent</code> option in <code>UI Blur Controller</code>.</p>
+<h3 id="ui_blur_mat_transparent">ui_blur_mat_transparent<a href="#ui_blur_mat_transparent" class="anchor" aria-hidden="true">#</a> </h3>
+<p>This material works specifically for gameobjects in the scene.</p>
+<ol>
+<li>
+<p>Create a second camera in the scene derived from the MainCamera.</p>
+</li>
+<li>
+<p>Turn off the <strong>UI</strong> option in the <strong>Culling Mask</strong> for the second camera.</p>
+</li>
+<li>
+<p>Apply the <code>ui_blur_mat_transparent</code> to your gameobject.</p>
+</li>
+</ol>
+<p>Make sure you turn on the <code>Is Transparent</code> option in <code>UI Blur Controller</code> and <code>Blur Camera</code> property is set.</p>
+<p><img
+    src="images/shaders/image2.png" alt=""
+    
+    
+    /></p>
+<h2 id="using-the-ui-blur-controller-script"><strong>Using the UI Blur Controller Script</strong><a href="#using-the-ui-blur-controller-script" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The <code>UI Blur Controller</code> script allows you to dynamically control the blur amount.</p>
+<ol>
+<li>
+<p>Attach the <code>UI Blur Controller</code> script to the UI element or gameobject.</p>
+</li>
+<li>
+<p>Use the <code>BlurAmount</code> attribute to adjust the blur amount as needed.</p>
+</li>
+</ol>
+<p><img
+    src="images/shaders/image3.png" alt=""
+    
+    
+    /></p>
+<h2 id="shapes-and-customization"><strong>Shapes and Customization</strong><a href="#shapes-and-customization" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The package includes two shapes: a circle and a square. You can also use your own custom shapes.</p>
+<ol>
+<li>
+<p>Import your custom shape into the project.</p>
+</li>
+<li>
+<p>Apply the <code>ui_blur_mat</code> or <code>ui_blur_mat_transparent</code> material to your custom shape.</p>
+</li>
+</ol>
+<p><img
+    src="images/shaders/mw1920_blur_squere_tex.png" alt=""
+    
+    
+    /> <img
+    src="images/shaders/mw1920_blur_circle_tex.png" alt=""
+    
+    
+    /></p>
+<h2 id="span-classmark-data-color3new-featurespan-drag-and-drop-ui-element-blurring"><strong><span class="mark" data-color="3">New Feature:</span> Drag-and-Drop UI Element Blurring</strong><a href="#span-classmark-data-color3new-featurespan-drag-and-drop-ui-element-blurring" class="anchor" aria-hidden="true">#</a> </h2>
+<p>The new feature allows you to select specific UI elements that will be affected by blur for the <code>ui_blur_mat</code> material using a drag-and-drop interface. Here’s how to use it:</p>
+<ol>
+<li>
+<p>In the <strong>UI Blur Controller</strong> inspector, you&rsquo;ll see a <strong>Foldout</strong> labeled <strong>&ldquo;UI Elements&rdquo;</strong>.</p>
+</li>
+<li>
+<p>Drag and drop UI elements from the hierarchy into this list.</p>
+</li>
+<li>
+<p>Next to each added element, there is an option to <strong>Include Children</strong>.</p>
+<ul>
+<li>
+<p>If checked, all child objects will also be blurred.</p>
+</li>
+<li>
+<p>If unchecked, only the parent object will be affected by the blur.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>A cross <code>(X)</code> button next to each UI element allows you to remove it from the list.</p>
+</li>
+</ol>
+<p><img
+    src="images/shaders/image4.png" alt=""
+    
+     style="width: 100%; max-width: 1500px;"
+    /></p>
+<video autoplay muted controls class="w-full max-w-3xl mx-auto" width="100%">
+  <source src="/shaders/drag_drop_feature.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h2 id="faq"><strong>FAQ</strong><a href="#faq" class="anchor" aria-hidden="true">#</a> </h2>
+<h4 id="can-i-use-this-shader-with-the-built-in-render-pipeline"><strong>Can I use this shader with the Built-in Render Pipeline?</strong><a href="#can-i-use-this-shader-with-the-built-in-render-pipeline" class="anchor" aria-hidden="true">#</a> </h4>
+<p>No, this shader is designed specifically for the Universal Render Pipeline (URP).</p>
+<h4 id="how-do-i-control-the-blur-amount-dynamically"><strong>How do I control the blur amount dynamically?</strong><a href="#how-do-i-control-the-blur-amount-dynamically" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Use the <code>UI Blur Controller</code> script attached to the UI element or gameobject.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/shaders/stencil-urp/" class="stretched-link text-reset text-decoration-none">Stencil - URP</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/shaders/ui-blur-urp/" class="stretched-link text-reset text-decoration-none">UI Blur - URP</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async
+  src="/js/app.8a763eba02c8c3e5e3459d468d1ed1253e926fa887f48d8d6ac2edb321dc3116.js"
+  integrity="sha256-inY&#43;ugLIw&#43;XjRZ1GjR7RJT6Sb6iH9I2NasLtsyHcMRY=">
+</script>
+
+
+
+
+
+<script async
+  src="/js/flexsearch.8350d2f520e131f8552ed57c1eadd05c50eccf0427267781442dd8ddf8fdcdf7.js"
+  integrity="sha256-g1DS9SDhMfhVLtV8Hq3QXFDszwQnJneBRC3Y3fj9zfc=">
+</script>
+<script async
+  src="/js/search-modal.877cece5b6bc789456f89fa1955ccfcd8a5acdb2179e7882e292a6caa49efe68.js"
+  integrity="sha256-h3zs5ba8eJRW&#43;J&#43;hlVzPzYpazbIXnniC4pKmyqSe/mg=">
+</script>
+
+    
+  </body>
+</html>

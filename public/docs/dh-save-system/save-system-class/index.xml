@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SaveSystem Class on DH Assets</title>
+    <link>http://localhost:1313/docs/dh-save-system/save-system-class/</link>
+    <description>Recent content in SaveSystem Class on DH Assets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/docs/dh-save-system/save-system-class/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Methods</title>
+      <link>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</guid>
+      <description>&lt;h2 id=&#34;savet&#34;&gt;&lt;code&gt;Save&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Saves a value to global or slot data.&lt;/p&gt;&#xA;&lt;h4 id=&#34;parameters&#34;&gt;&lt;strong&gt;Parameters&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;ID&lt;/code&gt;: Unique identifier for the data entry.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;value&lt;/code&gt;: Value to save.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Properties</title>
+      <link>http://localhost:1313/docs/dh-save-system/save-system-class/properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/save-system-class/properties/</guid>
+      <description>&lt;h2 id=&#34;getcurrentsaveslot&#34;&gt;&lt;code&gt;GetCurrentSaveSlot&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Returns the currently loaded save slot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example Usage:&lt;/strong&gt;&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;var currentSlot = SaveSystem.GetCurrentSaveSlot;&#xA;Debug.Log(&amp;#34;Current Save Slot: &amp;#34; + currentSlot.SlotName);&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;getsavedataslots&#34;&gt;&lt;code&gt;GetSaveDataSlots&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Retrieves all created save slots.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

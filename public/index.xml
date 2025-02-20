@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DH Unity Assets Documentation on DH Assets</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in DH Unity Assets Documentation on DH Assets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basic Operations</title>
+      <link>http://localhost:1313/docs/dh-save-system/basic-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/basic-operations/</guid>
+      <description>&lt;h3 id=&#34;saving-data&#34;&gt;&lt;strong&gt;Saving Data&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Global Data Example:&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Save resolution settings as global data&#xA;SaveSystem.Save(&amp;#34;resolution&amp;#34;, new Vector2(1920, 1080), isGlobal: true);&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Slot Data Example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/docs/dh-save-system/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/configuration/</guid>
+      <description>&lt;h3 id=&#34;savesystemsettings&#34;&gt;&lt;strong&gt;SaveSystemSettings&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Located under &lt;strong&gt;Project Settings/Save System Settings&lt;/strong&gt;, this component is crucial for setting up your encryption key and managing save data preferences.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>http://localhost:1313/docs/dh-save-system/encryption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/encryption/</guid>
+      <description>&lt;p&gt;Ensure the encryption key is correctly set in &lt;code&gt;SaveSystemSettings&lt;/code&gt; for secure data saving and loading. Use the Generate Encrypt Key button for easy key management and apply auto-saving settings as needed for both global and slot data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exceptions</title>
+      <link>http://localhost:1313/docs/dh-save-system/exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/exceptions/</guid>
+      <description>&lt;p&gt;When working with the &lt;strong&gt;DH Save System&lt;/strong&gt;, you may encounter several exceptions. These are typically easy to resolve and often involve either attempting to save data with an existing ID or trying to save to a slot that hasn&amp;rsquo;t been loaded. Here&amp;rsquo;s how you can address the issues related to these exceptions:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Licenses</title>
+      <link>http://localhost:1313/docs/dh-save-system/overview/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/overview/licenses/</guid>
+      <description>&lt;p&gt;This project includes the following software components, each under its own license:&lt;/p&gt;&#xA;&lt;h3 id=&#34;dh-save-system&#34;&gt;&lt;strong&gt;DH Save System&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Limited Use License Agreement&lt;/p&gt;&#xA;&lt;p&gt;Copyright (c) 2024 Dominik Hurta&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Licenses</title>
+      <link>http://localhost:1313/docs/shaders/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/licenses/</guid>
+      <description>&lt;p&gt;This project includes the following software components, each under its own license:&lt;/p&gt;&#xA;&lt;h3 id=&#34;dh-shaders&#34;&gt;&lt;strong&gt;DH Shaders&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Limited Use License Agreement&lt;/p&gt;&#xA;&lt;p&gt;Copyright (c) 2024 Dominik Hurta&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Liquid Potion</title>
+      <link>http://localhost:1313/docs/shaders/liquid-potion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/shaders/liquid-potion/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the &lt;strong&gt;Liquid Potion&lt;/strong&gt; &lt;strong&gt;Shader&lt;/strong&gt; documentation. This shader for Unity provides customizable liquid, glass, and bottle shaders, enabling you to create realistic potion effects with adjustable liquid levels, colors, and glass properties. This documentation will guide you through the initial setup and configuration to help you get the most out of the Liquid Potion Shader.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Methods</title>
+      <link>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</guid>
+      <description>&lt;h2 id=&#34;savet&#34;&gt;&lt;code&gt;Save&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Saves a value to global or slot data.&lt;/p&gt;&#xA;&lt;h4 id=&#34;parameters&#34;&gt;&lt;strong&gt;Parameters&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;ID&lt;/code&gt;: Unique identifier for the data entry.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;value&lt;/code&gt;: Value to save.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

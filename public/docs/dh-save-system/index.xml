@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DH Save System on DH Assets</title>
+    <link>http://localhost:1313/docs/dh-save-system/</link>
+    <description>Recent content in DH Save System on DH Assets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <atom:link href="http://localhost:1313/docs/dh-save-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Operations</title>
+      <link>http://localhost:1313/docs/dh-save-system/basic-operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/basic-operations/</guid>
+      <description>&lt;h3 id=&#34;saving-data&#34;&gt;&lt;strong&gt;Saving Data&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Global Data Example:&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;// Save resolution settings as global data&#xA;SaveSystem.Save(&amp;#34;resolution&amp;#34;, new Vector2(1920, 1080), isGlobal: true);&lt;/code&gt;&lt;/pre&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;p&gt;Slot Data Example:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>http://localhost:1313/docs/dh-save-system/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/configuration/</guid>
+      <description>&lt;h3 id=&#34;savesystemsettings&#34;&gt;&lt;strong&gt;SaveSystemSettings&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Located under &lt;strong&gt;Project Settings/Save System Settings&lt;/strong&gt;, this component is crucial for setting up your encryption key and managing save data preferences.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Encryption</title>
+      <link>http://localhost:1313/docs/dh-save-system/encryption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/encryption/</guid>
+      <description>&lt;p&gt;Ensure the encryption key is correctly set in &lt;code&gt;SaveSystemSettings&lt;/code&gt; for secure data saving and loading. Use the Generate Encrypt Key button for easy key management and apply auto-saving settings as needed for both global and slot data.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exceptions</title>
+      <link>http://localhost:1313/docs/dh-save-system/exceptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/exceptions/</guid>
+      <description>&lt;p&gt;When working with the &lt;strong&gt;DH Save System&lt;/strong&gt;, you may encounter several exceptions. These are typically easy to resolve and often involve either attempting to save data with an existing ID or trying to save to a slot that hasn&amp;rsquo;t been loaded. Here&amp;rsquo;s how you can address the issues related to these exceptions:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SaveDataSlot Class</title>
+      <link>http://localhost:1313/docs/dh-save-system/savedataslot-class/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/savedataslot-class/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;SaveDataSlot&lt;/code&gt; class represents an individual save slot in your game, encapsulating details such as the slot&amp;rsquo;s name, save progress, and additional custom data. It is designed to work seamlessly with the DH Save System, allowing for the creation, modification, and management of save slots without directly manipulating save files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SaveSystemManager</title>
+      <link>http://localhost:1313/docs/dh-save-system/savesystemmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/savesystemmanager/</guid>
+      <description>&lt;p&gt;A script that facilitates the loading of saved data when the game starts. It also allows for the addition of custom converters for non-serializable classes through the &lt;code&gt;jsonConverters&lt;/code&gt; list.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Working with Serializable Types</title>
+      <link>http://localhost:1313/docs/dh-save-system/working-with-serializable-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/dh-save-system/working-with-serializable-types/</guid>
+      <description>&lt;h2 id=&#34;serializabledictionary&#34;&gt;&lt;code&gt;SerializableDictionary&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;To save a &lt;code&gt;Dictionary&lt;/code&gt; type &lt;strong&gt;that is&lt;/strong&gt; &lt;strong&gt;in custom class&lt;/strong&gt;, it must be stored using &lt;code&gt;SerializableDictionary&lt;/code&gt;. Upon loading a &lt;code&gt;SerializableDictionary&lt;/code&gt;, you can easily convert it back to a standard &lt;code&gt;Dictionary&lt;/code&gt; type using the &lt;code&gt;.ToDictionary()&lt;/code&gt; method.&lt;br&gt;&#xA;When you saving just &lt;strong&gt;simple&lt;/strong&gt; &lt;code&gt;Dictionary&lt;/code&gt;, you can use standard &lt;code&gt;Dictionary&lt;/code&gt; type.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

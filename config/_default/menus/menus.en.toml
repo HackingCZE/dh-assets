@@ -1,0 +1,47 @@
+# [[docs]]
+#   name = "Prologue"
+#   weight = 10
+#   identifier = "prologue"
+#   url = "/docs/prologue/"
+
+# [[docs]]
+#   name = "Help"
+#   weight = 60
+#   identifier = "help"
+#   url = "/docs/help/"
+
+# [[docs]]
+#   name = "Lorem"
+#   weight = 70
+#   identifier = "lorem"
+#   url = "/docs/lorem/"
+
+# [[social]]
+#   name = "X"
+#   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>'
+#   url = "https://twitter.com/getdoks"
+#   weight = 10
+#
+# [[social]]
+#   name = "Discord"
+#   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l6 4v7" /> <path d="M18 17l-6 4l-6 -4" /> <path d="M4 14v-7l6 -4" /> <path d="M4 7l8 5v9" /> <path d="M20 7l-8 5" /> </svg>'
+#   url = "https://getdoks.org/chat"
+#   weight = 20
+
+[[social]]
+  name = "Unity Assets Store"
+  pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-unity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l6 4v7" /> <path d="M18 17l-6 4l-6 -4" /> <path d="M4 14v-7l6 -4" /> <path d="M4 7l8 5v9" /> <path d="M20 7l-8 5" /></svg>'
+  url = "https://assetstore.unity.com/publishers/94813"
+  post = "v0.1.0"
+  weight = 30
+
+[[sidebar_shaders]]
+  name = "Guides"
+  pageRef = "/docs/guides"
+  weight = 10
+
+
+# [[footer]]
+#   name = "Terms of Service"
+#   url = "/terms/"
+#   weight = 20
