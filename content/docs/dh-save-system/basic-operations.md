@@ -1,19 +1,20 @@
 ---
 title: "Basic Operations"
+weight: 5
 ---
 
 ### **Saving Data**
 
 Global Data Example:
 
-```
+```csharp
 // Save resolution settings as global data
 SaveSystem.Save("resolution", new Vector2(1920, 1080), isGlobal: true);
 ```
 
 Slot Data Example:
 
-```
+```csharp
 // Save player score in the current slot
 SaveSystem.Save("playerScore", 5000, isGlobal: false);
 ```
@@ -22,14 +23,14 @@ SaveSystem.Save("playerScore", 5000, isGlobal: false);
 
 Global Data Example:
 
-```
+```csharp
 // Load resolution settings
 Vector2 resolution = SaveSystem.Load<Vector2>("resolution", isGlobal: true);
 ```
 
 Slot Data Example:
 
-```
+```csharp
 // Load player score from the current slot
 int score = SaveSystem.Load<int>("playerScore", isGlobal: false);
 ```

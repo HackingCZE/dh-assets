@@ -50,7 +50,6 @@
 <meta property="og:url" content="http://localhost:1313/docs/dh-save-system/">
   <meta property="og:site_name" content="DH Assets">
   <meta property="og:title" content="DH Save System">
-  <meta property="og:description" content="Introduction Welcome to the DH Save System documentation. This guide provides all the information needed to integrate and utilize the DH Save System within your Unity projects. Designed to offer a robust and secure method for saving and loading game data, this system supports a wide variety of data types and ensures the security of your data through encryption.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/cover.png">
@@ -58,7 +57,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/cover.png">
   <meta name="twitter:title" content="DH Save System">
-  <meta name="twitter:description" content="Introduction Welcome to the DH Save System documentation. This guide provides all the information needed to integrate and utilize the DH Save System within your Unity projects. Designed to offer a robust and secure method for saving and loading game data, this system supports a wide variety of data types and ensures the security of your data through encryption.">
       <meta name="twitter:site" content="@getdoks">
 
     
@@ -146,7 +144,23 @@
       <ul class="list-unstyled list-nested">
 
   <li>
-      <a href="/docs/dh-save-system/basic-operations/">Basic Operations</a>
+    <details open>
+      <summary>Quick Start</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-save-system/quick-start/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/quick-start/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/quick-start/licenses/">Licenses</a>
+  </li>
+      </ul>
+    </details>
   </li>
 
   <li>
@@ -154,23 +168,15 @@
   </li>
 
   <li>
+      <a href="/docs/dh-save-system/savesystemmanager/">SaveSystemManager</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/basic-operations/">Basic Operations</a>
+  </li>
+
+  <li>
       <a href="/docs/dh-save-system/encryption/">Encryption</a>
-  </li>
-
-  <li>
-      <a href="/docs/dh-save-system/exceptions/">Exceptions</a>
-  </li>
-
-  <li>
-    <details open>
-      <summary>Overview</summary>
-      <ul class="list-unstyled list-nested">
-
-  <li>
-      <a href="/docs/dh-save-system/overview/licenses/">Licenses</a>
-  </li>
-      </ul>
-    </details>
   </li>
 
   <li>
@@ -194,7 +200,7 @@
   </li>
 
   <li>
-      <a href="/docs/dh-save-system/savesystemmanager/">SaveSystemManager</a>
+      <a href="/docs/dh-save-system/exceptions/">Exceptions</a>
   </li>
 
   <li>
@@ -210,19 +216,75 @@
       <ul class="list-unstyled list-nested">
 
   <li>
-      <a href="/docs/shaders/licenses/">Licenses</a>
+      <a href="/docs/dh-shaders/licenses/">Licenses</a>
   </li>
 
   <li>
-      <a href="/docs/shaders/liquid-potion/">Liquid Potion</a>
+      <a href="/docs/dh-shaders/liquid-potion/">Liquid Potion</a>
   </li>
 
   <li>
-      <a href="/docs/shaders/stencil-urp/">Stencil - URP</a>
+      <a href="/docs/dh-shaders/stencil-urp/">Stencil - URP</a>
   </li>
 
   <li>
-      <a href="/docs/shaders/ui-blur-urp/">UI Blur - URP</a>
+      <a href="/docs/dh-shaders/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>DH UI Navigation System</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Quick Start</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/quick-start/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/quick-start/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/quick-start/licenses/">Licenses</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/ignored-sides/">Ignored Sides</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/methods/">Methods</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/navigation-component/">Navigation Component</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-ui-navigation-system/visualization-tool/">Visualization Tool</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>Other</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/other/mindpop/">MindPop</a>
   </li>
       </ul>
     </details>
@@ -353,104 +415,9 @@
   <div class="col-md-12 col-lg-10 col-xl-8">
     <article>
       <h1 class="text-center">DH Save System</h1>
-      <div class="text-center"><h2 id="introduction">Introduction</h2>
-<p>Welcome to the DH Save System documentation. This guide provides all the information needed to integrate and utilize the DH Save System within your Unity projects. Designed to offer a robust and secure method for saving and loading game data, this system supports a wide variety of data types and ensures the security of your data through encryption.</p>
-<h2 id="table-of-contents">Table of Contents</h2>
-<ol>
-<li>
-<p><strong><a href="/docs/dh-save-system/overview">Overview</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/uIry3YMlSYoYvqpu">Configuration</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/mrAV3aAp0DDuhGWr">SaveSystemManager</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/h56FTgvliwDXw7zw">Basic Operations</a></strong></p>
-<ul>
-<li>
-<p><a href="/a/docs/h56FTgvliwDXw7zw">Saving Data</a></p>
-</li>
-<li>
-<p><a href="/a/docs/h56FTgvliwDXw7zw">Loading Data</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong><a href="/a/docs/QTlNOodnMp70GPvu">Encryption</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/5pLGvPjQuSXYIBLG">SaveDataSlot Class</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/SRyxooC7jkgOZwaI">SaveSystem Class</a></strong></p>
-<ul>
-<li>
-<p><a href="/a/docs/poPO7rGdPxadRUqI">Properties</a></p>
-</li>
-<li>
-<p><a href="/a/docs/lOwdG6onONhHMCTu">Methods</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong><a href="/a/docs/Dr02rUWiZnV165CZ">Exceptions</a></strong></p>
-</li>
-<li>
-<p><strong><a href="/a/docs/8qrIcRNmlGsA58fS">Working with Serializable Types</a></strong></p>
-</li>
-</ol>
-<h2 id="1-overview">1. Overview</h2>
-<p>The DH Save System distinguishes between global data (e.g., game settings) and slot-specific data (e.g., player progress) to provide flexible and secure data management. With built-in encryption and easy-to-use interfaces, it&rsquo;s an essential tool for Unity developers looking to implement reliable save and load functionality.</p>
-<h2 id="2-configuration">2. Configuration</h2>
-<p><strong>SaveSystemSettings:</strong> Accessible via <strong>Project Settings</strong>, this component allows for the configuration of encryption keys, auto-saving preferences, and key history management.</p>
-<p><strong>Save Data Window:</strong> A Unity Editor tool for viewing saved data directly, enhancing the development and debugging process.</p>
-<h2 id="3-savesystemmanager">3. SaveSystemManager</h2>
-<p>A runtime component that loads saved data upon game start. It supports custom converters for non-serializable classes, ensuring that all game data can be efficiently saved and loaded.</p>
-<h2 id="4-basic-operations">4. Basic Operations</h2>
-<h3 id="saving-dataadocsh56ftgvliwdxw7zw"><a href="/a/docs/h56FTgvliwDXw7zw">Saving Data</a></h3>
-<p>Illustrates how to save both global and slot-specific data, with examples for various data types, including dictionaries and transforms.</p>
-<h3 id="loading-dataadocsh56ftgvliwdxw7zw"><a href="/a/docs/h56FTgvliwDXw7zw">Loading Data</a></h3>
-<p>Guides on retrieving saved data, with an emphasis on type safety and handling optional data.</p>
-<h2 id="5-encryption">5. Encryption</h2>
-<p>Details the encryption mechanism used to secure saved data, including setting up encryption keys and managing key history for data recovery.</p>
-<h3 id="encryptionadocsqtlnoodnmp70gpvu"><a href="/a/docs/QTlNOodnMp70GPvu">Encryption</a></h3>
-<h2 id="6-savedataslot-class"><strong>6. SaveDataSlot Class</strong></h2>
-<p>The <code>SaveDataSlot</code> class manages individual game save slots within the DH Save System, encapsulating slot details like name, save timestamp, progress, and custom data. It simplifies save slot manipulation and querying, offering a robust framework for game save management.</p>
-<h3 id="propertiesadocs5plgvpjqusxyiblg"><a href="/a/docs/5pLGvPjQuSXYIBLG">Properties</a></h3>
-<ul>
-<li><strong>SlotName, LastSave, Progress, IndexSlot, SavePath, OtherData</strong>: Essential slot details including custom data storage.</li>
-</ul>
-<h3 id="methodsadocs5plgvpjqusxyiblg"><a href="/a/docs/5pLGvPjQuSXYIBLG">Methods</a></h3>
-<ul>
-<li><strong>SetSlotName, SetProgress, SetOtherData&lt;T&gt;, GetOtherData&lt;T&gt;</strong>: Update slot information and manage custom data, supporting flexible data types for comprehensive save management.</li>
-</ul>
-<h2 id="7-savesystem-class">7. SaveSystem Class</h2>
-<p>The <code>SaveSystem</code> class is the core of the DH Save System, providing essential functionalities for saving and loading data. It facilitates access to both global data and individual save slots, ensuring secure and efficient data management across your game.</p>
-<h3 id="propertiesadocssryxooc7jkgozwai"><a href="/a/docs/SRyxooC7jkgOZwaI">Properties</a></h3>
-<ul>
-<li><strong>GetCurrentSaveSlot, GetSaveDataSlots, GetGlobalData, GetSlotData:</strong> Accessors for retrieving current slots, all slots, and their respective data.</li>
-</ul>
-<h3 id="methodsadocssryxooc7jkgozwai"><a href="/a/docs/SRyxooC7jkgOZwaI">Methods</a></h3>
-<ul>
-<li>Comprehensive coverage of all methods, from <code>Save</code> and <code>Load</code> to more specialized functions like <code>LoadTransform</code> and <code>Serialize</code>.</li>
-</ul>
-<h2 id="8-exceptions">8. Exceptions</h2>
-<p>Explains common exceptions (e.g., <code>KeyAlreadyExistsException</code>, <code>SaveSlotNotLoadedException</code>) and provides strategies for resolution, ensuring robust error handling.</p>
-<h3 id="exceptionsadocsdr02ruwiznv165cz"><a href="/a/docs/Dr02rUWiZnV165CZ">Exceptions</a></h3>
-<h2 id="9-working-with-serializable-types">9. Working with Serializable Types</h2>
-<h3 id="serializabledictionary-and-serializabletransformadocs8qricrnmlgsa58fs"><a href="/a/docs/8qrIcRNmlGsA58fS">SerializableDictionary and SerializableTransform</a></h3>
-<p>Demonstrates converting complex data types into serializable formats for saving, and vice versa for loading, complete with examples.</p>
-<h2 id="contact--support">Contact &amp; Support</h2>
-<p>For support, bug reports, or contributions, please contact via email: <code>support@hurtaweb.cz</code>. We welcome your feedback and contributions to the project.</p>
-</div>
+      
 			<div class="card-list">
 				
-				
-					
-				
-					
 				
 					
 						<div class="card my-3">
@@ -485,11 +452,25 @@
 					
 				
 					
+				
+					
 						<div class="card my-3">
 							<div class="card-body">
-								<a class="stretched-link" href="/docs/dh-save-system/overview/licenses/">Licenses &rarr;</a>
+								<a class="stretched-link" href="/docs/dh-save-system/quick-start/introduction/">Introduction &rarr;</a>
 							</div>
 						</div>
+					
+				
+					
+				
+					
+						<div class="card my-3">
+							<div class="card-body">
+								<a class="stretched-link" href="/docs/dh-save-system/quick-start/licenses/">Licenses &rarr;</a>
+							</div>
+						</div>
+					
+				
 					
 				
 					
@@ -502,6 +483,22 @@
 								<a class="stretched-link" href="/docs/dh-save-system/save-system-class/methods/">Methods &rarr;</a>
 							</div>
 						</div>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+						<div class="card my-3">
+							<div class="card-body">
+								<a class="stretched-link" href="/docs/dh-save-system/quick-start/overview/">Overview &rarr;</a>
+							</div>
+						</div>
+					
+				
 					
 				
 					
@@ -526,6 +523,8 @@
 								<a class="stretched-link" href="/docs/dh-save-system/savesystemmanager/">SaveSystemManager &rarr;</a>
 							</div>
 						</div>
+					
+				
 					
 				
 					

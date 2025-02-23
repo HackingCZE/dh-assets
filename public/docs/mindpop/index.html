@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.73d646f9b2aee87b676d7172f73ab783e32a938901e7ef363d921a1b22e11c8a31f0410bdf192f4feb03a78a0d1003943d500aa81ff453910c2530e856179859.css" integrity="sha512-c9ZG&#43;bKu6HtnbXFy9zq3g&#43;Mqk4kB5&#43;82PZIaGyLhHIox8EEL3xkvT&#43;sDp4oNEAOUPVAKqB/0U5EMJTDoVheYWQ==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/mindpop/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/mindpop/">
+
+
+<title>MindPop  |  DH Assets</title>
+<meta name="description" content="">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/mindpop/">
+  <meta property="og:site_name" content="DH Assets">
+  <meta property="og:title" content="MindPop">
+  <meta property="og:description" content="Introduction Welcome to the MindPop documentation. MindPop is a simple tool designed for Unity developers to provide timely motivational popups while you work on your projects. This documentation will guide you through the configuration, and customization of MindPop to help you stay motivated and productive during your development process.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="og:image" content="http://localhost:1313/cover.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/cover.png">
+  <meta name="twitter:title" content="MindPop">
+  <meta name="twitter:description" content="Introduction Welcome to the MindPop documentation. MindPop is a simple tool designed for Unity developers to provide timely motivational popups while you work on your projects. This documentation will guide you through the configuration, and customization of MindPop to help you stay motivated and productive during your development process.">
+      <meta name="twitter:site" content="@getdoks">
+
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Dh Unity Assets Documentation",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Dosc",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "name": "Mind Pop",
+       "position": 3
+     }
+   ]
+ }
+</script>
+
+
+
+
+<link rel="stylesheet" href="/css/custom.css">
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <header class="navbar navbar-expand-lg">
+  <div class="container">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">DH Assets</a>
+
+    
+    
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>DH Save System</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Start Here</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/licenses/">Licenses</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/configuration/">Configuration</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/savesystemmanager/">SaveSystemManager</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/basic-operations/">Basic Operations</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/encryption/">Encryption</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/savedataslot-class/">SaveDataSlot Class</a>
+  </li>
+
+  <li>
+    <details open>
+      <summary>SaveSystem Class</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-save-system/save-system-class/methods/">Methods</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/save-system-class/properties/">Properties</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/exceptions/">Exceptions</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/working-with-serializable-types/">Working with Serializable Types</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>DH Shaders</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-shaders/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">DH Assets</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"></ul>
+
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link p-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://assetstore.unity.com/publishers/94813"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-unity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l6 4v7" /> <path d="M18 17l-6 4l-6 -4" /> <path d="M4 14v-7l6 -4" /> <path d="M4 7l8 5v9" /> <path d="M20 7l-8 5" /></svg><small class="ms-2 visually-hidden">Unity Assets Store</small></a>
+            </li>
+          </ul>
+        
+        </div>
+    </div>
+
+    
+    </div>
+</header>
+
+<div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 visually-hidden" id="searchModalLabel">Search</h1>
+        <button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="search-input flex-grow-1 d-none">
+          <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+            <label for="query" class="visually-hidden">Search</label>
+            <div class="d-flex">
+              <input type="search" id="query" name="query" class="search-text form-control form-control-lg" placeholder="Search" aria-label="Search" maxlength="128" autocomplete="off">
+              <button type="button" class="btn btn-link text-decoration-none px-0 ms-3 d-md-none" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="search-loading status message d-none mt-3 text-center">Loading search index…</p>
+        <p class="search-no-recent message d-none mt-3 text-center">No recent searches</p>
+        <p class="search-no-results message d-none mt-3 text-center">No results for "<strong><span class="query-no-results">Query here</span></strong>"</p>
+        <div id="searchResults" class="search-results"></div>
+        <template>
+          <article class="search-result list-view">
+            <div class="card my-3">
+              <div class="card-body">
+                <header>
+                  <h2 class="h5 title title-submitted mb-0"><a class="stretched-link text-decoration-none text-reset" href="#">Title here</a></h2>
+                  <div class="submitted d-none"><time class="created-date">Date here</time></div>
+                </header>
+                <div class="content">Summary here</div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline me-auto d-none d-md-block">
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd><span class="DocSearch-Label">to select</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd><span class="DocSearch-Label">to navigate</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd><span class="DocSearch-Label">to close</span></li>
+        </ul>
+        <p class="d-md-none">Search by <a class="text-decoration-none" href="https://github.com/nextapps-de/flexsearch">FlexSearch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar docs-sidebar-top d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>DH Save System</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+    <details open>
+      <summary>Start Here</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/introduction/">Introduction</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/overview/">Overview</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/start-here/licenses/">Licenses</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/configuration/">Configuration</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/savesystemmanager/">SaveSystemManager</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/basic-operations/">Basic Operations</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/encryption/">Encryption</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/savedataslot-class/">SaveDataSlot Class</a>
+  </li>
+
+  <li>
+    <details open>
+      <summary>SaveSystem Class</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-save-system/save-system-class/methods/">Methods</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/save-system-class/properties/">Properties</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/exceptions/">Exceptions</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-save-system/working-with-serializable-types/">Working with Serializable Types</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+
+  <li>
+    <details open>
+      <summary>DH Shaders</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li>
+      <a href="/docs/dh-shaders/licenses/">Licenses</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/liquid-potion/">Liquid Potion</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/stencil-urp/">Stencil - URP</a>
+  </li>
+
+  <li>
+      <a href="/docs/dh-shaders/ui-blur-urp/">UI Blur - URP</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc docs-toc-top d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>On this page</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#basic-configuration"><strong>Basic Configuration</strong></a>
+      <ul>
+        <li><a href="#enabling-and-disabling-mindpop">Enabling and Disabling MindPop</a></li>
+        <li><a href="#mindpop-settings">MindPop Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq"><strong>FAQ</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+			<h1>MindPop</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>On this page</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction"><strong>Introduction</strong></a></li>
+    <li><a href="#basic-configuration"><strong>Basic Configuration</strong></a>
+      <ul>
+        <li><a href="#enabling-and-disabling-mindpop">Enabling and Disabling MindPop</a></li>
+        <li><a href="#mindpop-settings">MindPop Settings</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq"><strong>FAQ</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<h2 id="introduction"><strong>Introduction</strong><a href="#introduction" class="anchor" aria-hidden="true">#</a> </h2>
+<p>Welcome to the MindPop documentation. MindPop is a simple tool designed for Unity developers to provide timely motivational popups while you work on your projects. This documentation will guide you through the configuration, and customization of MindPop to help you stay motivated and productive during your development process.</p>
+<h2 id="basic-configuration"><strong>Basic Configuration</strong><a href="#basic-configuration" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="enabling-and-disabling-mindpop">Enabling and Disabling MindPop<a href="#enabling-and-disabling-mindpop" class="anchor" aria-hidden="true">#</a> </h3>
+<ol>
+<li>
+<p>Once MindPop is installed, you will see a <strong>MindPop</strong> button in the top bar of the Unity Editor.</p>
+</li>
+<li>
+<p>Click this button to <strong>Turn On</strong> or <strong>Turn Off</strong> the MindPop tool. This gives you quick control over the motivational popups without navigating deep into settings.</p>
+</li>
+</ol>
+<p><strong>Quick Guide: Enabling MindPop</strong></p>
+<video autoplay muted loop controls class="w-full max-w-3xl mx-auto" width="100%">
+  <source src="/other/mind-pop/turn_on.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p><strong>Quick Guide: Disabling MindPop</strong></p>
+<video autoplay muted loop controls class="w-full max-w-3xl mx-auto" width="100%">
+  <source src="/other/mind-pop/turn_off.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h3 id="mindpop-settings">MindPop Settings<a href="#mindpop-settings" class="anchor" aria-hidden="true">#</a> </h3>
+<p>The <strong>MindPop</strong> section in the Project Settings allows you to customize how the tool functions. Here’s what you can configure:</p>
+<ul>
+<li>
+<p><code>Language Selection</code>: Choose your preferred language for the motivational popups from a list of 10 available languages.</p>
+</li>
+<li>
+<p><code>Message Interval</code>: Set the frequency of motivational popups with preset options: <code>5</code>, <code>10</code>, <code>15</code>, <code>20</code>, <code>30</code>, <code>45</code>, or <code>60</code> minutes.</p>
+</li>
+<li>
+<p><code>Time to Next Message</code>: Displays the remaining time until the next motivational popup, helping you keep track of when the next message will appear.</p>
+</li>
+</ul>
+<p>quck_guide.mp4</p>
+<p><a href="https://d3jwyy9rhyhl55.cloudfront.net/v2/166409/contents/IXS7mgtUZh7N9Nq3/quck_guide.mp4">Download (7.4 MB)</a></p>
+<h2 id="faq"><strong>FAQ</strong><a href="#faq" class="anchor" aria-hidden="true">#</a> </h2>
+<h4 id="how-do-i-stop-popups-temporarily"><strong>How do I stop popups temporarily?</strong><a href="#how-do-i-stop-popups-temporarily" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Use the <strong>MindPop</strong> button in the top bar (or in <strong>Project Settings</strong>) to turn off the tool when needed.</p>
+<h4 id="what-languages-are-supported"><strong>What languages are supported?</strong><a href="#what-languages-are-supported" class="anchor" aria-hidden="true">#</a> </h4>
+<p>MindPop comes with 10 languages, including <strong>Czech</strong>, <strong>English</strong>, <strong>Spanish</strong>, <strong>Chinese</strong>, <strong>French</strong>, <strong>German</strong>, <strong>Russian</strong>, <strong>Portuguese</strong>, <strong>Japanese</strong> and <strong>Arabic</strong>.</p>
+<h4 id="can-i-customize-the-messages"><strong>Can I customize the messages?</strong><a href="#can-i-customize-the-messages" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Not yet! It will be in the update.</p>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card w-100">
+			<div class="card-body d-flex">
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M5 12l6 6"></path>
+						<path d="M5 12l6 -6"></path>
+				 	</svg>
+				</div>
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Prev</div>
+					<a href="/docs/dh-save-system/save-system-class/methods/" class="stretched-link text-reset text-decoration-none">Methods</a>
+				</div>
+			</div>
+		</div>
+	<div class="m-2"></div>
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">Next</div>
+					<a href="/docs/dh-save-system/save-system-class/properties/" class="stretched-link text-reset text-decoration-none">Properties</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async
+  src="/js/app.b31321c280b5569f593c85396ea3998947c5cb2fa00ea566602a1d49131410bd.js"
+  integrity="sha256-sxMhwoC1Vp9ZPIU5bqOZiUfFyy&#43;gDqVmYCodSRMUEL0=">
+</script>
+
+
+
+
+
+<script async
+  src="/js/flexsearch.8350d2f520e131f8552ed57c1eadd05c50eccf0427267781442dd8ddf8fdcdf7.js"
+  integrity="sha256-g1DS9SDhMfhVLtV8Hq3QXFDszwQnJneBRC3Y3fj9zfc=">
+</script>
+<script async
+  src="/js/search-modal.877cece5b6bc789456f89fa1955ccfcd8a5acdb2179e7882e292a6caa49efe68.js"
+  integrity="sha256-h3zs5ba8eJRW&#43;J&#43;hlVzPzYpazbIXnniC4pKmyqSe/mg=">
+</script>
+
+    
+  </body>
+</html>

@@ -1,5 +1,6 @@
 ---
 title: "SaveSystemManager"
+weight: 4
 ---
 
 A script that facilitates the loading of saved data when the game starts. It also allows for the addition of custom converters for non-serializable classes through the `jsonConverters` list.

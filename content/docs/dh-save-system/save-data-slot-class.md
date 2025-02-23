@@ -1,5 +1,6 @@
 ---
 title: "SaveDataSlot Class"
+weight: 7
 ---
 
 The `SaveDataSlot` class represents an individual save slot in your game, encapsulating details such as the slot's name, save progress, and additional custom data. It is designed to work seamlessly with the DH Save System, allowing for the creation, modification, and management of save slots without directly manipulating save files.

@@ -16,7 +16,7 @@ summarylength = 20 # 70 (default)
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2020-2024 Thulite"
+copyRight = "Copyright (c) 2020-2025 Thulite"
 
 [build.buildStats]
   enable = true

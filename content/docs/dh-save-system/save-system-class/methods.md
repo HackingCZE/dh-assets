@@ -16,7 +16,7 @@ Saves a value to global or slot data.
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.Save("playerHealth", 100, isGlobal: false);
 ```
 
@@ -32,7 +32,7 @@ Loads a value of type T using the specified ID from either global or slot-specif
 
 **Example Usage**
 
-```
+```csharp
 int playerHealth = SaveSystem.Load<int>("playerHealth", isGlobal: false);
 ```
 
@@ -50,7 +50,7 @@ Attempts to load data of a specified type using the given ID from either global 
 
 **Example Usage**
 
-```
+```csharp
 bool success = SaveSystem.TryLoad(out int playerHealth, "playerHealth", isGlobal: false);
 ```
 
@@ -68,7 +68,7 @@ Loads and applies transform data to a single target transform.
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.LoadTransform(player.transform, "playerPosition", isGlobal: false);
 ```
 
@@ -86,7 +86,7 @@ Updates existing data with the specified ID in either global or slot-specific st
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.Update("playerHealth", 150, isGlobal: false);
 ```
 
@@ -104,7 +104,7 @@ Updates an existing entry with the specified ID or saves a new entry if it does 
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.UpdateOrSave("playerScore", 5000, isGlobal: false);
 ```
 
@@ -120,7 +120,7 @@ Removes a data entry with the specified ID from either global or slot-specific s
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.Remove("playerHealth", isGlobal: false);
 ```
 
@@ -136,8 +136,8 @@ Clears all data within a specified scope (global or slot-specific) without remov
 
 **Example Usage:**
 
-```
-SaveSystem.ClearData(isGlobal: true, saveImmediately: true); 
+```csharp
+SaveSystem.ClearData(isGlobal: true, saveImmediately: true);
 Debug.Log("Global data cleared and saved.");
 ```
 
@@ -153,8 +153,8 @@ Creates a new save slot with the specified name and index, and saves it.
 
 **Example Usage:**
 
-```
-SaveSystem.CreateNewSaveSlot("New Slot", 1); 
+```csharp
+SaveSystem.CreateNewSaveSlot("New Slot", 1);
 Debug.Log("New save slot created.");
 ```
 
@@ -168,7 +168,7 @@ Loads the save slot with the specified name into memory, replacing any currently
 
 **Example Usage:**
 
-```
+```csharp
 try {
     SaveSystem.LoadSaveSlot("Slot Name");
     Debug.Log("Save slot loaded.");
@@ -189,7 +189,7 @@ Removes a save slot with the specified name and index, deletes its associated sa
 
 **Example Usage:**
 
-```
+```csharp
 bool removed = SaveSystem.RemoveSaveSlot("Slot to Remove", 0);
 Debug.Log("Save slot removed: " + removed);
 ```
@@ -200,7 +200,7 @@ Saves the current slot data to disk and updates the global save data.
 
 **Example Usage:**
 
-```
+```csharp
 try {
     SaveSystem.SaveData();
     Debug.Log("Data saved successfully.");
@@ -219,7 +219,7 @@ Loads data from a 'specified path and optionally applies provided JSON converter
 
 **Example Usage:**
 
-```
+```csharp
 List<JsonConverter> converters = new List<JsonConverter> { new MyCustomConverter() };
 SaveSystem.LoadData(converters);
 Debug.Log("Data loaded with custom converters.");
@@ -231,7 +231,7 @@ Saves global data, including information about all save slots, to disk.
 
 **Example Usage**
 
-```
+```csharp
 SaveSystem.SaveGlobalData();
 ```
 
@@ -247,7 +247,7 @@ Checks if the specified ID exists in either global or slot-specific data.
 
 **Example Usage**
 
-```
+```csharp
 bool exists = SaveSystem.Contains("playerHealth", isGlobal: false);
 ```
 
@@ -261,8 +261,8 @@ Deserializes JSON data into an object of the specified type.
 
 **Example Usage**
 
-```
-string jsonData = "{ \"playerHealth\": 100 }"; // Encrypted JSON string 
+```csharp
+string jsonData = "{ \"playerHealth\": 100 }"; // Encrypted JSON string
 int playerHealth = SaveSystem.Deserialize<int>(jsonData);
 ```
 
@@ -276,7 +276,7 @@ Serializes an object into a JSON string and encrypts it.
 
 #### **Example Usage**
 
-```
-PlayerData playerData = new PlayerData { Health = 100, Score = 5000 }; 
+```csharp
+PlayerData playerData = new PlayerData { Health = 100, Score = 5000 };
 string encryptedJsonData = SaveSystem.Serialize(playerData);
 ```

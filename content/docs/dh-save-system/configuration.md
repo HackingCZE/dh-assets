@@ -1,5 +1,6 @@
 ---
 title: "Configuration"
+weight: 3
 ---
 
 ### **SaveSystemSettings**
@@ -16,7 +17,7 @@ Key Features:
 
 -   **Auto Save Slot Data**: Enables automatic saving for the currently loaded slot, with a customizable delay (`Auto Save Slot Data Delay Time` in minutes).
 
-![](/shaders/images/image5.png)
+![](/save-system/images/image1.png)
 
 ### **Save Data Window**
 
@@ -30,4 +31,4 @@ Capabilities:
 
 -   **Slot Data Management**: Offers the ability to browse through slots or view the current slot's data in the editor.
 
-![](/shaders/images/image6.png)
+![](/save-system/images/image2.png)

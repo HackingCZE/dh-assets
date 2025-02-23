@@ -1,17 +1,18 @@
 ---
 title: "Working with Serializable Types"
+weight: 10
 ---
 
 ## `SerializableDictionary`
 
-To save a `Dictionary` type **that is** **in custom class**, it must be stored using `SerializableDictionary`. Upon loading a `SerializableDictionary`, you can easily convert it back to a standard `Dictionary` type using the `.ToDictionary()` method.  
+To save a `Dictionary` type **that is** **in custom class**, it must be stored using `SerializableDictionary`. Upon loading a `SerializableDictionary`, you can easily convert it back to a standard `Dictionary` type using the `.ToDictionary()` method.
 When you saving just **simple** `Dictionary`, you can use standard `Dictionary` type.
 
 **Usage Example**
 
 Saving a `Dictionary`
 
-```
+```csharp
 // Assuming you have a Dictionary you wish to save
 Dictionary<string, int> playerScores = new Dictionary<string, int>
 {
@@ -26,7 +27,7 @@ SaveSystem.Save("playerScores", serializableScores, isGlobal: true);
 
 Loading a `Dictionary`
 
-```
+```csharp
 // Load the SerializableDictionary
 SerializableDictionary<string, int> loadedScores = SaveSystem.Load<SerializableDictionary<string, int>>("playerScores", isGlobal: true);
 
@@ -42,7 +43,7 @@ For saving `Transform` properties, use `SerializableTransform`. Unlike directly 
 
 Saving a `Transform`
 
-```
+```csharp
 // Create a SerializableTransform from a GameObject's transform
 SerializableTransform serializableTransform = new SerializableTransform(playerGameObject.transform);
 
@@ -52,7 +53,7 @@ SaveSystem.Save("playerTransform", serializableTransform, isGlobal: false);
 
 Loading and Applying a `Transform`
 
-```
+```csharp
 // Load the SerializableTransform
 SerializableTransform loadedTransform = SaveSystem.Load<SerializableTransform>("playerTransform", isGlobal: false);
 
@@ -70,7 +71,7 @@ When `SerializableFloat2` **is used within a custom class, it must** be utilized
 
 Saving a `Float2`
 
-```
+```csharp
 // Assuming you have a Float2 representing player position
 Float2 playerPosition = new Float2(1.5f, 2.5f);
 
@@ -81,7 +82,7 @@ SaveSystem.Save("playerPosition", serializablePosition, isGlobal: true);
 
 Loading a `Float2`
 
-```
+```csharp
 // Load the SerializableFloat2
 SerializableFloat2 loadedPosition = SaveSystem.Load<SerializableFloat2>("playerPosition", isGlobal: true);
 
@@ -99,7 +100,7 @@ Similar to `SerializableFloat2`, when `SerializableFloat3` is part of a custom c
 
 Saving `Float3`
 
-```
+```csharp
 // Assuming you have a Float3 representing player velocity
 Float3 playerVelocity = new Float3(0.5f, 0.0f, 1.0f);
 
@@ -110,7 +111,7 @@ SaveSystem.Save("playerVelocity", serializableVelocity, isGlobal: false);
 
 Loading `Float3`
 
-```
+```csharp
 // Load the SerializableFloat3
 SerializableFloat3 loadedVelocity = SaveSystem.Load<SerializableFloat3>("playerVelocity", isGlobal: false);
 

@@ -1,5 +1,6 @@
 ---
 title: "SaveSystem Class"
+weight: 7
 ---
 
 The `SaveSystem` class provides static functions for saving and loading game data, managing save slots, and handling global and slot-specific data. It also includes methods for data encryption, checking for unsaved changes, and clearing data.

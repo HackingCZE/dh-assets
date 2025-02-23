@@ -6,21 +6,7 @@
     <description>Recent content in Dosc on DH Assets</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <copyright>Copyright (c) 2020-2025 Thulite</copyright>
     <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>http://localhost:1313/docs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/docs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/</guid>
-      <description></description>
-    </item>
   </channel>
 </rss>

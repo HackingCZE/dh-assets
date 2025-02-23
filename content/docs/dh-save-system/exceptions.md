@@ -1,5 +1,6 @@
 ---
 title: "Exceptions"
+weight: 9
 ---
 
 When working with the **DH Save System**, you may encounter several exceptions. These are typically easy to resolve and often involve either attempting to save data with an existing ID or trying to save to a slot that hasn't been loaded. Here's how you can address the issues related to these exceptions:
@@ -122,4 +123,4 @@ catch (InvalidPropertyTypeException)
 }
 ```
 
-  
+

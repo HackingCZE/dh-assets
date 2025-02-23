@@ -2,30 +2,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>http://localhost:1313/docs/</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    
-    <url>
-      <loc>http://localhost:1313/docs/</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
-    </url>
-    
-    <url>
       <loc>http://localhost:1313/docs/dh-save-system/</loc>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     
     <url>
-      <loc>http://localhost:1313/docs/shaders/</loc>
+      <loc>http://localhost:1313/docs/dh-shaders/</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/docs/dh-ui-navigation-system/</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
+    
+    <url>
+      <loc>http://localhost:1313/docs/other/</loc>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
-        <loc>http://localhost:1313/docs/dh-save-system/basic-operations/</loc>
+        <loc>http://localhost:1313/docs/dh-save-system/quick-start/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -35,17 +35,17 @@
         <priority>0.5</priority>
       </url>
       <url>
+        <loc>http://localhost:1313/docs/dh-save-system/savesystemmanager/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-save-system/basic-operations/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
         <loc>http://localhost:1313/docs/dh-save-system/encryption/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://localhost:1313/docs/dh-save-system/exceptions/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-      </url>
-      <url>
-        <loc>http://localhost:1313/docs/dh-save-system/overview/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -60,7 +60,7 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1313/docs/dh-save-system/savesystemmanager/</loc>
+        <loc>http://localhost:1313/docs/dh-save-system/exceptions/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
@@ -70,22 +70,52 @@
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1313/docs/shaders/licenses/</loc>
+        <loc>http://localhost:1313/docs/dh-shaders/licenses/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1313/docs/shaders/liquid-potion/</loc>
+        <loc>http://localhost:1313/docs/dh-shaders/liquid-potion/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1313/docs/shaders/stencil-urp/</loc>
+        <loc>http://localhost:1313/docs/dh-shaders/stencil-urp/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
       <url>
-        <loc>http://localhost:1313/docs/shaders/ui-blur-urp/</loc>
+        <loc>http://localhost:1313/docs/dh-shaders/ui-blur-urp/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-ui-navigation-system/ignored-sides/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-ui-navigation-system/methods/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-ui-navigation-system/navigation-component/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/dh-ui-navigation-system/visualization-tool/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
+      <url>
+        <loc>http://localhost:1313/docs/other/mindpop/</loc>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
       </url>
