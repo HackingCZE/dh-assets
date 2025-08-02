@@ -1,5 +1,7 @@
 ---
 title: "MindPop"
+prev: ""
+next: null
 ---
 
 ## **Introduction**

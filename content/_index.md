@@ -1,5 +1,5 @@
 ---
-title: "DH Unity Assets Documentation"
+title: "Documentations"
 description: "Find documentation for all our Unity assets."
 ---
 
