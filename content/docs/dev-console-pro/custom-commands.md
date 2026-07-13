@@ -22,6 +22,33 @@ public class PlayerController : MonoBehaviour
 }
 ```
 
+### **Event-like Execution with SharedCommands**
+
+If you want to invoke multiple methods across entirely different scripts simultaneously using the *exact same command name*, use the `[SharedCommand]` attribute! This acts like an event broadcast.
+
+You can also precisely control the execution order using the `Order` property. Methods with lower `Order` values execute first. If `Order` is not defined, the system automatically runs them last, sorting them alphabetically by their script name, and prints a warning in the console log.
+
+```csharp
+public class GameManager : MonoBehaviour
+{
+    [SharedCommand("save.all", Order = 1)]
+    public static void SaveGameWorld()
+    {
+        // Executes first
+    }
+}
+
+public class InventoryManager : MonoBehaviour
+{
+    [SharedCommand("save.all", Order = 2)]
+    public static void SavePlayerInventory()
+    {
+        // Executes after the GameManager
+    }
+}
+```
+
+
 ### **Parameter IntelliSense (Autocomplete)**
 
 The Dev Console Pro is extremely smart when it comes to auto-suggesting parameter values. By default, **it automatically infers types**! If your method takes a `bool`, it suggests `true`/`false`. If it takes a `KeyCode`, it suggests all Unity KeyCodes.

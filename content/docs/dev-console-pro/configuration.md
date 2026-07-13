@@ -11,6 +11,7 @@ Navigate to **Edit → Project Settings → Dev Console Pro** to access the sett
 
 #### **UI & Layout Configuration**
 *   **Syntax Position Options:** You can independently configure where the parameter hints (e.g. `<X> <Y> <Z>`) and the colored live syntax overlay render. Choose to dock them at the top of the command panel or have them float cleanly right above your input bar.
+*   **Default Log Zoom:** Define the default zoom/font size (from 50% to 300%) for the logs in the right panel. The top bar also dynamically wraps its buttons seamlessly when resizing!
 *   **Console Height & Panel Ratio:** Control exactly how much screen space the console uses and how wide the left (command list) and right (log view) panels are.
 *   **Zebra Striping:** Enable a premium dark slate zebra-striping aesthetic on the panels to dramatically improve readability.
 

@@ -10,7 +10,7 @@
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
     "preview": "vite preview --outDir public",
-    "deploy": "npm run build && gh-pages -d public -b main -r https://github.com/dh-assets/dh-assets.github.io.git"
+    "deploy": "npm run build && gh-pages -d public -b main -r https://github.com/dhassets/dhassets.github.io.git"
   },
   "dependencies": {
     "@tabler/icons": "^3.12.0",
