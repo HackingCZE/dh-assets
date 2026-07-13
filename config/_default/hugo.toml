@@ -1,5 +1,5 @@
 title = "DH Assets"
-baseurl = "https://hackingcze.github.io/dh-assets/"
+baseurl = "https://dh-assets.github.io/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
