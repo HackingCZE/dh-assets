@@ -1,40 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>DH UI Navigation System on DH Assets</title>
-    <link>http://localhost:1313/docs/dh-ui-navigation-system/</link>
-    <description>Recent content in DH UI Navigation System on DH Assets</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2025 Thulite</copyright>
-    <atom:link href="http://localhost:1313/docs/dh-ui-navigation-system/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Ignored Sides</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/ignored-sides/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/ignored-sides/</guid>
-      <description>&lt;p&gt;Customize navigation by ignoring certain sides and manually setting navigation targets for these sides.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ignored Sides Options&lt;/strong&gt;: Left, Right, Up, Down.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&#xD;&#xA;&lt;img src=&#34;http://localhost:1313/dh-ui-navigation-system/images/image1.png&#34; alt=&#34;&#34;   style=&#34;margin: auto; display:block;&#34; /&gt;&#xD;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Methods</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/methods/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/methods/</guid>
-      <description>&lt;h2 id=&#34;trygetright&#34;&gt;&lt;code&gt;TryGetRight&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Tries to get the Navigation component of the UI element to the right.&lt;/p&gt;&#xA;&lt;h4 id=&#34;parameters&#34;&gt;&lt;strong&gt;Parameters&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;rightNavigation&lt;/code&gt;: The Navigation component found on the right, if any.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;returns&#34;&gt;&lt;strong&gt;Returns&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;bool&lt;/code&gt;: True if a Navigation component was found on the right, false otherwise.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example Usage&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Navigation Component</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/navigation-component/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/navigation-component/</guid>
-      <description>&lt;p&gt;The core of the &lt;strong&gt;DH UI Navigation System&lt;/strong&gt;, this component is attached to UI elements to manage navigation.&lt;/p&gt;&#xA;&lt;h4 id=&#34;properties&#34;&gt;&lt;strong&gt;Properties&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Interactable&lt;/strong&gt;: When set to &lt;code&gt;false&lt;/code&gt;, the navigation component is non-interactive.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Visualization Tool</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/visualization-tool/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/visualization-tool/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;Visualize&lt;/code&gt; button provides a graphical representation of navigation links between elements within the Unity Editor, enhancing the default Unity visualization.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DH UI Navigation System on DH Assets</title><link>/docs/dh-ui-navigation-system/</link><description>Recent content in DH UI Navigation System on DH Assets</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2025 Thulite</copyright><atom:link href="/docs/dh-ui-navigation-system/index.xml" rel="self" type="application/rss+xml"/><item><title>Ignored Sides</title><link>/docs/dh-ui-navigation-system/ignored-sides/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/ignored-sides/</guid><description>&lt;p>Customize navigation by ignoring certain sides and manually setting navigation targets for these sides.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Ignored Sides Options&lt;/strong>: Left, Right, Up, Down.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;img src="/dh-ui-navigation-system/images/image1.png" alt="" style="margin: auto; display:block;" />
+&lt;/p></description></item><item><title>Methods</title><link>/docs/dh-ui-navigation-system/methods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/methods/</guid><description>&lt;h2 id="trygetright">&lt;code>TryGetRight&lt;/code>&lt;/h2>
+&lt;p>Tries to get the Navigation component of the UI element to the right.&lt;/p>
+&lt;h4 id="parameters">&lt;strong>Parameters&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>rightNavigation&lt;/code>: The Navigation component found on the right, if any.&lt;/li>
+&lt;/ul>
+&lt;h4 id="returns">&lt;strong>Returns&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>bool&lt;/code>: True if a Navigation component was found on the right, false otherwise.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example Usage&lt;/strong>&lt;/p></description></item><item><title>Navigation Component</title><link>/docs/dh-ui-navigation-system/navigation-component/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/navigation-component/</guid><description>&lt;p>The core of the &lt;strong>DH UI Navigation System&lt;/strong>, this component is attached to UI elements to manage navigation.&lt;/p>
+&lt;h4 id="properties">&lt;strong>Properties&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>Interactable&lt;/strong>: When set to &lt;code>false&lt;/code>, the navigation component is non-interactive.&lt;/p></description></item><item><title>Visualization Tool</title><link>/docs/dh-ui-navigation-system/visualization-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/visualization-tool/</guid><description>&lt;p>The &lt;code>Visualize&lt;/code> button provides a graphical representation of navigation links between elements within the Unity Editor, enhancing the default Unity visualization.&lt;/p></description></item></channel></rss>

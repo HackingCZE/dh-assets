@@ -1,26 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>SaveSystem Class on DH Assets</title>
-    <link>http://localhost:1313/docs/dh-save-system/save-system-class/</link>
-    <description>Recent content in SaveSystem Class on DH Assets</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2025 Thulite</copyright>
-    <atom:link href="http://localhost:1313/docs/dh-save-system/save-system-class/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Methods</title>
-      <link>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-save-system/save-system-class/methods/</guid>
-      <description>&lt;h2 id=&#34;savet&#34;&gt;&lt;code&gt;Save&amp;lt;T&amp;gt;&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Saves a value to global or slot data.&lt;/p&gt;&#xA;&lt;h4 id=&#34;parameters&#34;&gt;&lt;strong&gt;Parameters&lt;/strong&gt;&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;ID&lt;/code&gt;: Unique identifier for the data entry.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;value&lt;/code&gt;: Value to save.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Properties</title>
-      <link>http://localhost:1313/docs/dh-save-system/save-system-class/properties/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-save-system/save-system-class/properties/</guid>
-      <description>&lt;h2 id=&#34;getcurrentsaveslot&#34;&gt;&lt;code&gt;GetCurrentSaveSlot&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Returns the currently loaded save slot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example Usage:&lt;/strong&gt;&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div class=&#34;expressive-code&#34;&gt;&#xD;&#xA;  &lt;figure class=&#34;frame not-content&#34;&gt;&#xD;&#xA;  &lt;figcaption class=&#34;header&#34;&gt;&#xD;&#xA;    &lt;span class=&#34;title&#34;&gt;&lt;/span&gt;&#xD;&#xA;  &lt;/figcaption&gt;&#xD;&#xA;  &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;currentSlot&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SaveSystem&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetCurrentSaveSlot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Debug&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Log&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Current Save Slot: &amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;currentSlot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;SlotName&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xD;&#xA;  &lt;/figure&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;h2 id=&#34;getsavedataslots&#34;&gt;&lt;code&gt;GetSaveDataSlots&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Retrieves all created save slots.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SaveSystem Class on DH Assets</title><link>/docs/dh-save-system/save-system-class/</link><description>Recent content in SaveSystem Class on DH Assets</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2025 Thulite</copyright><atom:link href="/docs/dh-save-system/save-system-class/index.xml" rel="self" type="application/rss+xml"/><item><title>Methods</title><link>/docs/dh-save-system/save-system-class/methods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-save-system/save-system-class/methods/</guid><description>&lt;h2 id="savet">&lt;code>Save&amp;lt;T&amp;gt;&lt;/code>&lt;/h2>
+&lt;p>Saves a value to global or slot data.&lt;/p>
+&lt;h4 id="parameters">&lt;strong>Parameters&lt;/strong>&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>ID&lt;/code>: Unique identifier for the data entry.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>value&lt;/code>: Value to save.&lt;/p></description></item><item><title>Properties</title><link>/docs/dh-save-system/save-system-class/properties/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-save-system/save-system-class/properties/</guid><description>&lt;h2 id="getcurrentsaveslot">&lt;code>GetCurrentSaveSlot&lt;/code>&lt;/h2>
+&lt;p>Returns the currently loaded save slot.&lt;/p>
+&lt;p>&lt;strong>Example Usage:&lt;/strong>&lt;/p>
+
+
+
+&lt;div class="expressive-code">
+ &lt;figure class="frame not-content">
+ &lt;figcaption class="header">
+ &lt;span class="title">&lt;/span>
+ &lt;/figcaption>
+ &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-csharp" data-lang="csharp">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">var&lt;/span> &lt;span class="n">currentSlot&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">SaveSystem&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">GetCurrentSaveSlot&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Debug&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">Log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Current Save Slot: &amp;#34;&lt;/span> &lt;span class="p">+&lt;/span> &lt;span class="n">currentSlot&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">SlotName&lt;/span>&lt;span class="p">);&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>
+ &lt;/figure>
+&lt;/div>
+&lt;h2 id="getsavedataslots">&lt;code>GetSaveDataSlots&lt;/code>&lt;/h2>
+&lt;p>Retrieves all created save slots.&lt;/p></description></item></channel></rss>

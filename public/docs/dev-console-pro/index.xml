@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dev Console Pro on DH Assets</title><link>/docs/dev-console-pro/</link><description>Recent content in Dev Console Pro on DH Assets</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2025 Thulite</copyright><atom:link href="/docs/dev-console-pro/index.xml" rel="self" type="application/rss+xml"/><item><title>Custom Commands &amp; IntelliSense</title><link>/docs/dev-console-pro/custom-commands-intellisense/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dev-console-pro/custom-commands-intellisense/</guid><description>&lt;h3 id="registering-custom-commands">&lt;strong>Registering Custom Commands&lt;/strong>&lt;/h3>
+&lt;p>Creating a custom command is as simple as adding the &lt;code>[Command]&lt;/code> attribute to any method in your game, whether it&amp;rsquo;s static or part of a &lt;code>MonoBehaviour&lt;/code>.&lt;/p></description></item><item><title>Configuration &amp; Project Settings</title><link>/docs/dev-console-pro/configuration-project-settings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dev-console-pro/configuration-project-settings/</guid><description>&lt;h3 id="project-settings-hub">&lt;strong>Project Settings Hub&lt;/strong>&lt;/h3>
+&lt;p>Every behavior and visual aspect of the Dev Console Pro can be cleanly managed from the Unity Editor.&lt;/p></description></item><item><title>Built-in Features &amp; Commands</title><link>/docs/dev-console-pro/built-in-features-commands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dev-console-pro/built-in-features-commands/</guid><description>&lt;h3 id="list-of-built-in-commands">&lt;strong>List of Built-in Commands&lt;/strong>&lt;/h3>
+&lt;p>The Dev Console comes packed with several essential commands out-of-the-box:&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Command&lt;/th>
+ &lt;th>Description&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;code>help&lt;/code>&lt;/td>
+ &lt;td>Prints all available commands in a formatted table.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>aliases&lt;/code>&lt;/td>
+ &lt;td>Prints all registered command aliases in a formatted table.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>alias &amp;lt;shortcut&amp;gt; &amp;lt;target_command&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Creates a command alias shortcut.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>bind &amp;lt;key&amp;gt; &amp;lt;command&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Binds a key to a console command.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>unbind &amp;lt;key&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Removes a key binding.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>binds&lt;/code>&lt;/td>
+ &lt;td>Lists all active key bindings.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>clear&lt;/code>&lt;/td>
+ &lt;td>Clears the console log view.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>quit&lt;/code>&lt;/td>
+ &lt;td>Exits the application (stops Play mode in Editor).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>version&lt;/code> / &lt;code>info&lt;/code>&lt;/td>
+ &lt;td>Shows game version and Unity engine version.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>sysinfo&lt;/code>&lt;/td>
+ &lt;td>Displays OS, CPU, GPU, and RAM hardware information.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>time.scale &amp;lt;value&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Sets &lt;code>Time.timeScale&lt;/code> to speed up, slow down, or pause the game.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>gravity &amp;lt;Vector3&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Sets &lt;code>Physics.gravity&lt;/code> using Vector3 syntax.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>fps.show&lt;/code>&lt;/td>
+ &lt;td>Toggles the built-in minimal FPS counter overlay.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>gc&lt;/code>&lt;/td>
+ &lt;td>Forces a full managed garbage collection pass.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>say &amp;lt;message&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Echoes a message to the console (supports HTML rich text tags).&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>scene.load &amp;lt;name&amp;gt;&lt;/code>&lt;/td>
+ &lt;td>Loads a scene by name or build index.&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;code>scene.restart&lt;/code>&lt;/td>
+ &lt;td>Reloads the currently active scene.&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="log-formatting--filtering">&lt;strong>Log Formatting &amp;amp; Filtering&lt;/strong>&lt;/h3>
+&lt;p>The console intercepts standard Unity logs and renders them gracefully:&lt;/p></description></item></channel></rss>

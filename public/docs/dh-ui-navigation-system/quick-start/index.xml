@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Quick Start on DH Assets</title>
-    <link>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/</link>
-    <description>Recent content in Quick Start on DH Assets</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>Copyright (c) 2020-2025 Thulite</copyright>
-    <atom:link href="http://localhost:1313/docs/dh-ui-navigation-system/quick-start/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/introduction/</guid>
-      <description>&lt;p&gt;Welcome to the DH UI Navigation System documentation. This guide provides all the information needed to integrate and utilize the DH UI Navigation System within your Unity projects. Designed to enhance navigation capabilities, this system offers advanced features for managing UI navigation, making it an essential tool for developers looking to create intuitive and efficient user interfaces.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Overview</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/overview/</guid>
-      <description>&lt;p&gt;The DH UI Navigation System is an advanced component designed to facilitate navigation within Unity user interfaces. This system builds upon standard navigation features, providing enhanced capabilities and customization options. The main component of this system is the &lt;code&gt;Navigation&lt;/code&gt; component, which can be attached to any UI element to control its navigation behavior.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Licenses</title>
-      <link>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/licenses/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/dh-ui-navigation-system/quick-start/licenses/</guid>
-      <description>&lt;p&gt;This project includes the following software components, each under its own license:&lt;/p&gt;&#xA;&lt;h3 id=&#34;dh-ui-navigation-system&#34;&gt;&lt;strong&gt;DH UI Navigation System&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Limited Use License Agreement&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quick Start on DH Assets</title><link>/docs/dh-ui-navigation-system/quick-start/</link><description>Recent content in Quick Start on DH Assets</description><generator>Hugo</generator><language>en</language><copyright>Copyright (c) 2020-2025 Thulite</copyright><atom:link href="/docs/dh-ui-navigation-system/quick-start/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>/docs/dh-ui-navigation-system/quick-start/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/quick-start/introduction/</guid><description>&lt;p>Welcome to the DH UI Navigation System documentation. This guide provides all the information needed to integrate and utilize the DH UI Navigation System within your Unity projects. Designed to enhance navigation capabilities, this system offers advanced features for managing UI navigation, making it an essential tool for developers looking to create intuitive and efficient user interfaces.&lt;/p></description></item><item><title>Overview</title><link>/docs/dh-ui-navigation-system/quick-start/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/quick-start/overview/</guid><description>&lt;p>The DH UI Navigation System is an advanced component designed to facilitate navigation within Unity user interfaces. This system builds upon standard navigation features, providing enhanced capabilities and customization options. The main component of this system is the &lt;code>Navigation&lt;/code> component, which can be attached to any UI element to control its navigation behavior.&lt;/p></description></item><item><title>Licenses</title><link>/docs/dh-ui-navigation-system/quick-start/licenses/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dh-ui-navigation-system/quick-start/licenses/</guid><description>&lt;p>This project includes the following software components, each under its own license:&lt;/p>
+&lt;h3 id="dh-ui-navigation-system">&lt;strong>DH UI Navigation System&lt;/strong>&lt;/h3>
+&lt;p>Limited Use License Agreement&lt;/p></description></item></channel></rss>

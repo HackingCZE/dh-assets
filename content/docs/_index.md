@@ -1,3 +1,3 @@
 ---
-title: "Dosc"
+title: "Docs"
 ---
