@@ -32,9 +32,17 @@ The Dev Console comes packed with several essential commands out-of-the-box:
 The console intercepts standard Unity logs and renders them gracefully:
 *   Each log includes a high-precision `[HH:mm:ss]` timestamp.
 *   Logs are badge-labeled with `[INFO]`, `[WARNING]`, `[ERROR]`, or `[OK]`.
-*   A search bar on the top-right allows instant filtering of logs by text.
-*   Toggle buttons let you quickly show or hide Warnings and Errors.
-*   The `[-] 100% [+]` buttons allow you to dynamically zoom the text size of the logs from 50% to 300%.
+*   A **Search Bar** on the top-right allows instant filtering of logs by text.
+*   **Toggle Filter Buttons** let you quickly show or hide Warnings, Errors, and regular Info logs.
+*   **Collapse Button**: Just like the Unity Editor console, the `Collapse` button deduplicates identical logs and displays a counter badge (e.g., `(5)`) to keep your view clean!
+*   **Log Zoom**: The `[-] 100% [+]` buttons allow you to dynamically zoom the text size of the logs from 50% to 300%.
+
+### **Advanced UI Features**
+
+The Dev Console is built with premium UI aesthetics to look great in modern games:
+*   **Floating Syntax Overlay**: A real-time stacked syntax highlighter tracks your cursor position. As you type, it displays context-aware parameter hints floating directly above your input!
+*   **Zebra Striping**: You can enable a premium dark slate zebra-striping background effect for both panels. This significantly improves readability for long log lists.
+*   **Auto-Wrapping Toolbar**: When resizing the console to a narrow width, the top-right toolbar buttons elegantly wrap to a second line to prevent any UI overlapping.
 
 ### **Execution Profiling & Auto-Success**
 
