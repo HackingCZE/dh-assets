@@ -1,6 +1,6 @@
 title = "DH Assets"
-baseurl = "https://dh-assets.github.io/"
-canonifyURLs = false
+baseurl = "https://dhassets.github.io/"
+canonifyURLs = true
 disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "term"]
