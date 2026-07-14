@@ -81,4 +81,4 @@
  &lt;/tbody>
 &lt;/table>
 &lt;h3 id="log-formatting--filtering">&lt;strong>Log Formatting &amp;amp; Filtering&lt;/strong>&lt;/h3>
-&lt;p>The console intercepts standard Unity logs and renders them gracefully:&lt;/p></description></item></channel></rss>
+&lt;p>The console intercepts standard Unity logs and renders them gracefully:&lt;/p></description></item><item><title>Methods &amp; API</title><link>/docs/dev-console-pro/methods-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/dev-console-pro/methods-api/</guid><description>&lt;p>While the Dev Console automatically intercepts Unity&amp;rsquo;s native &lt;code>Debug.Log&lt;/code>, &lt;code>Debug.LogWarning&lt;/code>, and &lt;code>Debug.LogError&lt;/code> calls, you can also interact directly with the &lt;code>ConsoleCore&lt;/code> API to trigger custom formatted logs, clear the console, or force a log flush.&lt;/p></description></item></channel></rss>
