@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.2.0] - 2026-07-15
 ### Added
+- **Color IntelliSense**: The IntelliSense engine now automatically infers parameters of type `Color` or `Color32` and suggests a rich list of standard HTML color names (e.g., `red`, `cyan`, `magenta`).
 - **SharedCommand Execution Order**: Added `Order` property to `[SharedCommand]`. Commands with identical names are now perfectly sorted, running lower Order values first.
 - **SharedCommand Fallback Sorting**: Scripts with undefined orders now automatically fall back to alphabetical script name sorting.
 - **Synchronous Method Logging**: Implemented real-time interleaving logs during `[SharedCommand]` execution (e.g. `[SharedCommand] Running 'save.all' from script GameManager (Order: 1)`).

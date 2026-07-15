@@ -59,6 +59,7 @@ The Dev Console Pro handles type conversion natively for almost every common Uni
 | **Enums** | Native support. Just use your Enum as the parameter type and type its name (e.g. `EnemyType.Orc`). |
 | **Vectors** | `Vector2`, `Vector3`. Use syntax like `new(0, 1.5, 0)`, `Vector3.down`, or `[0, 1.5, 0]`. |
 | **Arrays** | Pass arrays using bracket syntax: `spawn [goblin, orc, troll]`. |
+| **Colors** | Native support. Parsed via Unity's HTML parser (e.g., `red`, `cyan`, `#FF00FF`). |
 | **GameObjects** | Pass GameObjects by name. Type `Enemy` and the console automatically finds `GameObject.Find("Enemy")`. |
 | **Components** | Look up components natively using `GoName:ComponentType` (e.g. `Player:Rigidbody2D`). |
 
@@ -72,11 +73,12 @@ The Dev Console Pro features a powerful contextual suggestion engine. When the u
 If you do nothing, the console automatically infers suggestion types for parameters!
 ```csharp
 [Command("set.god.mode")]
-public static void SetGodMode(bool enabled, KeyCode triggerKey, EnemyType enemyEnum) 
+public static void SetGodMode(bool enabled, KeyCode triggerKey, EnemyType enemyEnum, Color glowColor) 
 {
     // Automatically suggests 'true'/'false' for enabled.
     // Automatically suggests Unity KeyCode list for triggerKey.
     // Automatically suggests EnemyType values for enemyEnum.
+    // Automatically suggests basic color names (red, blue...) for glowColor.
 }
 ```
 *Note: String parameters with names like `sceneName` or `layer` will also be automatically inferred.*
@@ -144,6 +146,7 @@ Here is the complete list of available `SuggestionType` enum values you can use:
 | `Custom` | Your own dynamically generated lists via string ID | Instant |
 | `Vector2` | Standard Vector2 constants (e.g., `Vector2.up`) | Static |
 | `Vector3` | Standard Vector3 constants (e.g., `Vector3.forward`) | Static |
+| `Color` | Standard HTML color names (red, cyan, blue, etc.) | Static |
 
 ---
 
