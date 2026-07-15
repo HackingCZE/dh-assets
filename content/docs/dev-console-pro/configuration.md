@@ -20,6 +20,7 @@ Navigate to **Edit → Project Settings → Dev Console Pro** to access the sett
 *   **Reflection Fallback:** Toggle the ability to execute raw C# expressions via Reflection. You can disable this in shipped release builds if you are worried about security/exploits.
 *   **Pause While Open:** When enabled, the console automatically sets `Time.timeScale = 0` while open, effectively freezing the game, and restores it when closed.
 *   **Fuzzy Search Strictness:** Control how lenient the autocomplete algorithm is when matching your typos.
+*   **Enable Demo Commands:** Toggle whether demo commands (starting with `demo.` or belonging to classes containing `Demo` in their name) are registered and shown. When disabled, these commands are completely hidden and inactive in all scenes except those named `"Demo"`.
 
 #### **Logging Options**
 *   **Intercept Unity Logs:** When enabled, all native `Debug.Log`, `Debug.LogWarning`, and `Debug.LogError` calls throughout your entire codebase will be intercepted and cleanly formatted inside the in-game Dev Console with rich timestamps and type badges.
