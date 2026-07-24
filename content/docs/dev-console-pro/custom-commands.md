@@ -49,6 +49,36 @@ public class InventoryManager : MonoBehaviour
 ```
 
 
+### **Multi-Instance Commands (InstanceMode)**
+
+When a `[Command]` is placed on a non-static method of a MonoBehaviour that has many instances in the scene (e.g., 30 enemies), you need to control *which* instance runs the command. Use the `InstanceMode` property:
+
+```csharp
+public class EnemyAI : MonoBehaviour
+{
+    // Default: Runs on the first found. Logs a warning if multiple exist.
+    [Command("enemy.attack")]
+    public void Attack() { /* ... */ }
+
+    // Runs on ALL instances in the scene simultaneously.
+    [Command("enemy.heal", InstanceMode = CommandInstanceMode.AllInstances)]
+    public void HealAll() { /* ... */ }
+
+    // User must specify which GameObject to target as the first argument.
+    // e.g., typing "enemy.inspect Goblin_01" targets only that specific one.
+    [Command("enemy.inspect", InstanceMode = CommandInstanceMode.ByGameObjectName)]
+    public void Inspect() { /* ... */ }
+}
+```
+
+| Mode | Behavior |
+|------|----------|
+| `FirstFound` | Runs on the first instance found. **Logs a warning** if multiple instances exist, showing which one was selected. |
+| `AllInstances` | Runs the command on **every** instance in the scene, similar to `SharedCommand`. |
+| `ByGameObjectName` | Requires the user to type the target GameObject's name as the first argument. IntelliSense suggests valid targets. |
+
+---
+
 ### **Supported Parameter Types**
 
 The Dev Console Pro handles type conversion natively for almost every common Unity type without requiring any boilerplate parsing code.

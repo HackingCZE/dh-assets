@@ -8,6 +8,18 @@ All notable changes to the Dev Console Pro package will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-07-24
+### Added
+- **Keybind Execution Logging**: Keybinds now log their execution result to the Dev Console (e.g., `[Keybind F5] help executed successfully.`), matching the behavior of manually typed commands.
+- **CommandInstanceMode**: New `InstanceMode` property on `[Command]` to control behavior when multiple MonoBehaviour instances exist in the scene:
+  - `FirstFound` (default): Runs on the first instance found, but now **logs a warning** showing how many instances were found and which one was selected.
+  - `AllInstances`: Runs the command on **every** instance in the scene.
+  - `ByGameObjectName`: Requires the user to specify the target GameObject name as the first argument for precise targeting.
+- **ConsoleCore.LogCount**: New public property exposing the current log entry count.
+
+### Fixed
+- Keybind errors now log to the Dev Console instead of Unity's Debug.LogWarning, making them visible in-game.
+
 ## [2.2.0] - 2026-07-15
 ### Added
 - **Color IntelliSense**: The IntelliSense engine now automatically infers parameters of type `Color` or `Color32` and suggests a rich list of standard HTML color names (e.g., `red`, `cyan`, `magenta`).
